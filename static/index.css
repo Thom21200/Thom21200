@@ -2,9 +2,34 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
 
-    background-color: #dfdfdf;
-    opacity: 1;
-    background-image: radial-gradient(#636bfc54 1px, #e5e5f754 1px);
-    background-size: 20px 20px;
+    background-color: darkcyan;
+    color: white;
+}
+h1{
+    background-color: #fff !important;
+    background-image: radial-gradient(#636bfc54 1px, #e5e5f754 1px) !important;
+    background-size: 20px 20px !important;
 
+    height: 200px !important;
+    
+    margin: 0px 0px !important;
+
+    border-bottom: 15px #000;
+    color: #111
+
+}
+h1, .centered{
+    text-align: center;
+}
+button{
+    border: none !important;
+    padding: 16px 32px;
+    cursor: pointer;
+    color: black;
+    transition-duration: 0.4s;
+    background-color: white;
+}
+button:hover {
+  background-color: #4CAF50;
+  color: white;
 }
