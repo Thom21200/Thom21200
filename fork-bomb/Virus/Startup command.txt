@@ -1,0 +1,3 @@
+Here is the one-line command to start the bomb
+
+cmd /c tar -xf File.zip & cd File & wscript //nologo Launch.vbs
