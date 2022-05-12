@@ -18,7 +18,7 @@ custom_font = True  # change it if you've set an already installed font
 custom_font_path = "assets/custom_font.ttf"
 
 # animation
-FPS = 120
+FPS = 60
 animation_speed = 55
 animation_slowing_sprites = ["mummy", "alien"]
 
