@@ -13,7 +13,20 @@ label {
     padding: 15px;
 }
 
-h1 {
-    padding-bottom: 50px;
+th {
+    padding-top: 60px;
+    font-size: h1;
+}
+
+.box div, h2 {
+    flex-grow: 1;
+}
+
+div {
+    padding: 10px;
+}
+
+div.box {
+    padding: 0;
 }
 

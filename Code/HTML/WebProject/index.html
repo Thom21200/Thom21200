@@ -3,7 +3,7 @@
     <head>
         <title>Commander en ligne</title>
         <link rel="icon" type="image/icon" href="static/favicon.ico">
-        <link rel="stylesheet" type="text/css" href="static/style/style.css">
+        <link rel="stylesheet"type="text/css" href="static/style/style.css">
         <script src="static/script/script.js"></script>
         <meta charset="UTF-8">
         <meta lang="fr">
@@ -11,55 +11,35 @@
     <body onload="onload()">
         <img src="static/img/SGDF logo.png" width="auto" height="150">
         <h1>Commander en ligne</h1>
-        <div class="form">
+        <div class="box">
         <form action="/submit.html", method="POST">
-            <table>
-                <tr>
-                    <td>
-                    <label for="name">Nom / Prénom</label>
-                    </td>
-                    <td colspan="3">
-                    <input type="text" id="name" name="name">
-                    </td>
-                </tr>
+            <div>
+                Nom / Prénom
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                Téléphone
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div>
+                Adresse mail
+                <input type="email" id="mail" name="mail">
+            </div>
 
-                <tr>
-                    <td>
-                    <label for="phone">Téléphone</label>
-                    </td>
-                    <td>
-                    <input type="tel" id="phone" name="phone">
-                    </td>
-                    <td>
-                    <label for="mail">Addresse mail</label>
-                    </td>
-                    <td>
-                    <input type="email" id="mail" name="mail">
-                    </td>
-                </tr>
-            </table>
-            <br>
-            <table>
-                <tr>
-                    <th colspan="2">Pot de miel</th>
-                    <th>Quantité</th>
-                    <th>Total</th>
-                </tr>
-                <tr>
-                    <td colspan="2">Liquide - 500g (6.50€)</td>
-                    <td><input type="number" id="ql"></td>
-                    <td><input type="number" id="qlt" value="0€" readonly></td>
-                </tr>
-                <tr>
-                    <td colspan="2">Crémeux - 500g (6.50€)</td>
-                    <td><input type="number" id="qc"></td>
-                    <td><input type="number" id="qct" value="0€" readonly></td>
-                </tr>
-                <tr>
-                    <td colspan="3">Total</td>
-                    <td><input type="number" id="total" value="0€" readonly></td>
-                </tr>
-            </table>
+            <h2>Pot de miel</h2>
+            <h2>Quantité</h2>
+            <h2>Total</h2>
+
+            Liquide - 500g (6.50€)
+            <input type="number" id="ql">
+            0
+
+            Crémeux - 500g (6.50€)
+            <input type="number" id="qc">
+            0
+
+            Total
+            0
         </form>
         </div>
     </body>

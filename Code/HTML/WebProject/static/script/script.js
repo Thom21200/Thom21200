@@ -5,12 +5,12 @@ function onload() {
 function checkPrice() {
     ql = document.getElementById("ql").value;
     qlt = ql*6.5;
-    document.getElementById("qlt").value = qlt;
+    document.getElementById("qlt").innerHTML = qlt;
 
     qc = document.getElementById("qc").value;
     qct = qc*6.5;
-    document.getElementById("qct").value = qct;
+    document.getElementById("qct").innerHTML = qct;
 
     total = qct + qlt;
-    document.getElementById("qlt").value = total;
+    document.getElementById("total").innerHTML = total;
 }
