@@ -4,43 +4,61 @@
         <title>Commander en ligne</title>
         <link rel="icon" type="image/icon" href="static/favicon.ico">
         <link rel="stylesheet"type="text/css" href="static/style/style.css">
-        <script src="static/script/script.js"></script>
+        <script src="static/script/payement.js"></script>
         <meta charset="UTF-8">
         <meta lang="fr">
     </head>
     <body onload="onload()">
-        <img src="static/img/SGDF logo.png" width="auto" height="150">
-        <h1>Commander en ligne</h1>
-        <div class="box">
-        <form action="/submit.html", method="POST">
-            <div>
-                Nom / Prénom
-                <input type="text" id="name" name="name">
-            </div>
-            <div>
-                Téléphone
-                <input type="tel" id="phone" name="phone">
-            </div>
-            <div>
-                Adresse mail
-                <input type="email" id="mail" name="mail">
-            </div>
-
-            <h2>Pot de miel</h2>
-            <h2>Quantité</h2>
-            <h2>Total</h2>
-
-            Liquide - 500g (6.50€)
-            <input type="number" id="ql">
-            0
-
-            Crémeux - 500g (6.50€)
-            <input type="number" id="qc">
-            0
-
-            Total
-            0
+        <img src="static/img/SGDF logo.png" width="auto" height="150px">
+        <h1 class="noprint">Commander du miel</h1>
+        <h1 class="print">Bon pour le marché de noël</h1>
+        
+        <form action="submit.html" method="GET">
+            <table>
+                <tr>
+                    <td>Nom</td>
+                    <td colspan="3"><input type="text" name="name" class="form" style="width:97%" placeholder="Nom"></td>
+                </tr>
+                <tr>
+                    <td>Téléphone</td>
+                    <td><input type="tel" name="phone" class="form" placeholder="Téléphone"></td>
+                    <td>Mail</td>
+                    <td colspan="2"><input type="email" name="mail" class="form" placeholder="Adresse mail"></td>
+                </tr>
+                </table>
+                <br>
+                <br>
+                <table class="command">
+                <tr>
+                    <th colspan="3">Pot de miel</th>
+                    <th>Qté</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>Liquide</td>
+                    <td>...................................</td>
+                    <td><i>(500g, 6.50€)</i></td>
+                    <td><input type="number" name="ql" id="ql" class="form quantity noprint" value="0"><div id="qlp" class="print"></div></td>
+                    <td><div id="qlt">0.00€</div></td>
+                </tr>
+                <tr>
+                    <td>Crémeux</td>
+                    <td>...................................</td>
+                    <td><i>(500g, 6.50€)</i></td>
+                    <td><input type="number" name="qc" id="qc" class="form quantity noprint" value="0"><div id="qcp" class="print"></div></td>
+                    <td><div id="qct">0.00€</div></td>
+                </tr>
+                <tr><td class="sep" colspan="5"></td></tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td class="total">Total</td>
+                    <td id="total">0.00€</td>
+                </tr>
+            </table>
+            <br><br><br><br>
+            <input type="submit" value="Commander en ligne" class="submit noprint">
         </form>
-        </div>
+        <div class="space">
+        <button class="submit noprint" onclick="window.print();">Imprimer</button>
     </body>
 </html>
