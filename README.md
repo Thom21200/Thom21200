@@ -1,11 +1,5 @@
-Hey guys
-========
-My name is Thomas and I'm a little french coder 🇫🇷
+Minecraft Modpack
+=================
+***This part is special.***
 
-Coding
-------
-I code a lot in python, but also can code in powershell or cmd
-
-Contact
--------
-How to reach me: Dm on discord [tt_thoma#6939](https://www.discord.com/app/channels/@me) or by [mail](mailto:thomwill212@gmail.com)
+This is where I store the **Minecraft Java Edition 1.19.2** modpack and where I can update it safely and fast without having to worry about renting servers, payement or renewal.
