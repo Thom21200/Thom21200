@@ -139,7 +139,7 @@ cd mods
 
 REM Download modpack
 echo [INFO] Downloading modpack...
-curl -o modpack.zip https://media.githubusercontent.com/media/tt-thoma/tt-thoma/mcmodpack/modpack.zip -#
+curl -o modpack.zip https://public.bl.files.1drv.com/y4mzXGOLqszjA3yYujLcy4OUotceCnxfO17wPTzo6wEZKHYgoBDa_Fc-n9BAXM7EY2AtTk_kPbmGbwmBNHAnShjvTcmpM5-rIKASn6qbHWnS5AwdLFHyOD-mS3JnrTJFqhenJVXP4WHGXE7gwMkPMnVMfyYHIhFHGcdwZbTDSZN7jy2SD-81YBywhiTj3oXVixF0sOegsZFa32-f2N6N-J_1p_okZOqRqaL_NdyQCxjZCQ?AVOverride=1 -#
 
 REM Check status
 
