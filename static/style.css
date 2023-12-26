@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+body {
+  font-family: 'Nova Square';
+  color: white;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 0.8fr 1.7fr 0.5fr;
+  grid-template-rows: 0.4fr 1.4fr 1.2fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "title title more"
+    "nav content content"
+    "nav content content";
+
+  --accent: rgb(52, 115, 233);
+  --sidenav-bg: rgba(52, 115, 233, 0.5);
+
+  --accent2: rgb(136, 52, 233);
+}
+
+button {
+  border: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+
+  transition: all 100ms ease-in-out;
+}
+
+button:hover {
+  background-color: var(--accent2);
+  color: white;
+}
+
+@keyframes slide {
+  0% {
+    background-position: 150px 150px;
+  }
+}
+
+#background {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background-image: url('dirt.jpg');
+  background-size: 150px 150px;
+
+  animation: slide 5s linear infinite;
+}
+
+#title { 
+  font-family: 'Nabla';
+  font-size: 50px;
+  grid-area: title;
+  background-color: var(--accent); 
+}
+
+#more { 
+  grid-area: more;
+  background-color: var(--accent);
+
+  text-align: right;
+}
+
+#more button {
+  font-size: 20px;
+  height: 72px;
+  width: 85px;
+
+  margin: 5px;
+}
+
+/*#more button {
+}*/
+
+#nav { 
+  grid-area: nav;
+  background-color: var(--sidenav-bg);
+  backdrop-filter: blur(5px) brightness(50%);
+}
+
+#content { 
+  grid-area: content;
+  backdrop-filter: blur(3px);
+  font-size: 25px;
+}
+
+#content * {
+  padding: 15px;
+}
+
+.title {
+  backdrop-filter: brightness(50%);
+  font-size: 35px;
+}
